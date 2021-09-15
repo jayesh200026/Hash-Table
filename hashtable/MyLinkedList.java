@@ -35,7 +35,7 @@ public class MyLinkedList<K, V> {
 	 */
 	public MyMapNode<K, V> search(K key) {
 		MyMapNode<K, V> temp = head;
-		while (temp != null && temp.getNext() != null) {
+		while (temp != null) {
 			if (temp.getKey().equals(key)) {
 				return temp;
 			}
@@ -48,7 +48,8 @@ public class MyLinkedList<K, V> {
 	/**
 	 * @return all the content of linked list in string format
 	 */
-	public String printAllNodes() {
+
+	public String toString() {
 		return "My node[ " + head + " ]";
 	}
 

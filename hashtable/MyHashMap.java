@@ -9,9 +9,10 @@ public class MyHashMap<K, V> {
 
 	/**
 	 * @param key=  key value of node
-	 * @param value = value of the node Checks if the node with key values exits if
-	 *              does just updates its value parameter else creates new node and
-	 *              adds to linked list
+	 * @param value = value of the node.
+	 * Checks if the node with key values exits if
+	 * does just updates its value parameter else creates new node and
+	 * adds to linked list
 	 */
 	public void add(K key, V value) {
 		MyMapNode<K, V> myMapNode = myLinkedList.search(key);
@@ -35,9 +36,9 @@ public class MyHashMap<K, V> {
 		return myMapNode.getValue();
 	}
 
-	@Override
+	//@Override
 	public String toString() {
-		return "MyHashMap [myLinkedList=" + myLinkedList.printAllNodes() + "]";
+		return "MyHashMap [myLinkedList=" + myLinkedList + "]";
 	}
 
 }
